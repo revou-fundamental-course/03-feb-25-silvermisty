@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Konversi Suhu</h1>
+    <p class="text-deskripsi">Masukkan suhu pada kotak di bawah dan klik tombol "Convert" untuk mengonversi.<br>
+    </p>
+    <label for="celsius">Celsius (°C):</label>
+    <input type="number" id="celsius" placeholder="Enter temperature in °C">
+    <div class="buttons">
+      <button onclick="convertToFahrenheit()">Convert</button>
+      <button onclick="resetFields()">Reset</button>
+      <button onclick="reverseConversion()">Reverse</button>
+    </div>
+    <label for="fahrenheit">Fahrenheit (°F):</label>
+    <input type="number" id="fahrenheit" placeholder="Enter temperature in °F">
+    <div class="calculation">
+      <h3>Calculation:</h3>
+      <p id="calculation"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
